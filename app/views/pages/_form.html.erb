@@ -1,0 +1,14 @@
+<%= form_tag("providers", method: :get, class: "search_engine") do %>
+
+  <%= text_field_tag :city,
+    params[:city],
+    class: "form-control", id: "booking_address",
+    placeholder: "Where are you?"
+  %>
+
+
+  <%= submit_tag(value = "Find A Provider")
+   %>
+<% end %>
+
+<%= javascript_pack_tag "autocomplete_pack" %>
