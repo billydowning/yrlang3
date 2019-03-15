@@ -1,39 +1,98 @@
+.container {
+  max-width: 1240px;
+}
 .banner {
+  margin-top: 50px;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  border-radius: 5px;
+  height: 90vh;
   justify-content: flex-start;
   align-items: center;
   display: flex;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), asset-url('LandingpageBanner.jpg');
-  margin-top: -70px;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url('LandingpageBanner.jpg');
+}
+.banner2 {
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  height: 80vh;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), asset-url('footerbanner.jpg');
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: #FFFFFF;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
+  font-weight: bold;
+}
+.banner2 h1 {
+  margin: 65px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 46px;
   font-weight: bold;
 }
 
 .banner p {
   font-size: 20px;
-  color: white;
+  color: #FFFFFF;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-
-#search-field{
-  background-color: lightgrey;
-  border: 3px solid;
-  border-color: black;
-  width: 25%;
-  padding: 30px;
-  margin-left: 10px;
+.banner h3 {
+  font-size: 26px;
+  color: black;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: Helvetica;
+  text-align: center;
 }
 
-.search_engine {
+#search-field{
+  background-color: #DEE5E5;
+  width: 25%;
+  padding: 30px;
+  margin-left: 10%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #686C5F;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
 
+.form {
+  margin-top: 20px;
+}
+
+.submit-button {
+  margin-top: 20px;
+  background-color: #DB4142;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  margin-left: 55px;
+}
+.submit-button:hover {
+  opacity: 0.8;
+}
+
+.btn {
+  padding: 20px;
+  margin-left: 150px;
+  width: 200px;
+  font-size: 30;
+  border-radius: 10px;
+  transition: all .8s ease-in-out;
+  background-color: #DB4142;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  color: white;
 }
